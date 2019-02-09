@@ -1,0 +1,17 @@
+<h1>
+  Angular 7 Tree Demo
+</h1>
+<div>
+  <tree-view-component 
+  [treeData]='myTree'
+  (ondrop)='onDrop($event)' 
+  (onStartRenameItem)="onStartRenameItem($event)"
+  (onFinishRenameItem)='onFinishRenameItem($event)'
+  (onStartDeleteItem)='onStartDelete($event)'
+  (onFinishDeleteItem)='onFinishDelete($event)'
+  (onCancelDeleteItem)='onCancelDelete($event)'
+  (onadditem)='onadditem($event)'
+  [config]='config'>
+  </tree-view-component>
+  <div id='eventInfo'></div>
+</div>
